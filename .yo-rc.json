@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "id.co.tech.cakra.pegadaian.demo"
+    },
+    "jhipsterVersion": "5.8.1",
+    "applicationType": "gateway",
+    "baseName": "demobackend",
+    "packageName": "id.co.tech.cakra.pegadaian.demo",
+    "packageFolder": "id/co/tech/cakra/pegadaian/demo",
+    "serverPort": "8070",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWFlMzFiOTU0NTg1M2QxZGYwY2NiYzM0MWQ2ODE0MGU2MmY3ZWVmM2M5NjAwZWJkYmE4NDgzZTJjMWNmZjViYTE2M2Y2YWM2NTdiMzJmMDFmYTU3ZWI5ZTMzYmJiYTc1OWExMWQ5MWZiY2UzMDYxOGYyZTk3Njk4YWI3OWIwM2Q=",
+    "clientFramework": "react",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
