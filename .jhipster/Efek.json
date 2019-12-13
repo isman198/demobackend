@@ -1,0 +1,58 @@
+{
+    "name": "Efek",
+    "fields": [
+        {
+            "fieldName": "kodeEfek",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 20
+        },
+        {
+            "fieldName": "namaEfek",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "closingPrice",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "min"
+            ],
+            "fieldValidateRulesMin": 0
+        },
+        {
+            "fieldName": "closingDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "statusGadai",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "hargaPenutupan",
+            "otherEntityName": "hargaPenutupan",
+            "otherEntityRelationshipName": "efek"
+        }
+    ],
+    "changelogDate": "20191122034031",
+    "entityTableName": "efek",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

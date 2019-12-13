@@ -1,0 +1,39 @@
+{
+    "name": "HargaPenutupan",
+    "fields": [
+        {
+            "fieldName": "tanggal",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "harga",
+            "fieldType": "Double",
+            "fieldValidateRules": [
+                "min"
+            ],
+            "fieldValidateRulesMin": 0
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "efek",
+            "otherEntityName": "efek",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "hargaPenutupan"
+        }
+    ],
+    "changelogDate": "20191122034032",
+    "entityTableName": "harga_penutupan",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

@@ -1,0 +1,33 @@
+entity Efek {
+	kodeEfek String required unique maxlength(20),
+    namaEfek String required maxlength(100),
+    closingPrice Double min(0),
+    closingDate LocalDate,
+    statusGadai Boolean
+}
+
+entity HargaPenutupan
+{
+	tanggal LocalDate required,
+    harga Double min(0)
+}
+
+relationship OneToMany
+{
+    Efek
+    to
+    HargaPenutupan
+}
+
+
+
+// Set pagination options
+paginate HargaPenutupan with pagination
+
+//dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+angularSuffix * with mySuffix
